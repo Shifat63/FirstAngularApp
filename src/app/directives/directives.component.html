@@ -1,0 +1,13 @@
+<div>
+  <div *ngIf="courses.length>0; else noCourse">
+    <h2>Courses</h2>
+    <ul>
+      <li *ngFor="let course of courses; index as i">
+        {{i}}-{{course}}
+      </li>
+    </ul>
+  </div>
+  <ng-template #noCourse>
+    No course yet
+  </ng-template>
+</div>

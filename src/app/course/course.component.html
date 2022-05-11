@@ -1,0 +1,20 @@
+<p>list of courses</p>
+<!--Here 'uppercase' is a pipe. Some other examples are lowercase, decimal, currency, percent -->
+<p>{{ title | uppercase }}</p>
+<p>{{ getTitle() | lowercase }}</p>
+<div>
+  <h3>Courses from component</h3>
+  <ul>
+    <li *ngFor="let course of courses">
+      {{course}}
+    </li>
+  </ul>
+</div>
+<div>
+  <h3>Courses from service</h3>
+  <ul>
+    <li *ngFor="let course of coursesFromService">
+      {{course}}
+    </li>
+  </ul>
+</div>

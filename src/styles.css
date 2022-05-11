@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+/*command to install bootstrap
+npm install bootstrap --save*/
+@import "~bootstrap/dist/css/bootstrap.css";

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstAngularApp';
+  emailOutside:string = "outside@example.com";
+
+  enterPressedEventHandler(email:string){
+    console.log("Enter pressed. From outside we get email: "+email);
+  }
 }
